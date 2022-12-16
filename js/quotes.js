@@ -54,5 +54,5 @@ const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)]
 // ceil() : 올림
 // floor() : 내림
 
-quote.innerText = todaysQuote.quote
+quote.innerText = `"${todaysQuote.quote}"`
 author.innerText = todaysQuote.author

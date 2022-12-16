@@ -12,7 +12,7 @@ function onGeoOk(position){
         const city = document.querySelector("#weather span:last-child")
         const name = data.name
          weather.innerText = `${data.weather[0].main} / ${data.main.temp}`
-         city.innerText = data.name
+         city.innerText = ` @ ${data.name}`
       
     })
 }

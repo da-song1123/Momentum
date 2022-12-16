@@ -1,6 +1,7 @@
 const toDoForm = document.getElementById("todo-form")
 const toDoList = document.getElementById("todo-list")
-const toDoInput = toDoForm.querySelector("input")
+const toDoInput = document.querySelector("#todo-form input") 
+//toDoForm.querySelector("input")
 // document.querySelector("#todo-form input")
 
 const TODOS_KEY = "todos"
@@ -20,11 +21,11 @@ function deleteTodo (event){
 
 
 function paintTodo(newTodo){
-    const li = document.createElement("li")
+    const li = document.createElement("li.list-group-item")
     li.id = newTodo.id
     const span = document.createElement("span")
     span.innerText = newTodo.text
-    const button = document.createElement("button")
+    const button = document.createElement("button.btn")
     button.innerText = "❌"
     button.addEventListener("click", deleteTodo)
     li.appendChild(span)

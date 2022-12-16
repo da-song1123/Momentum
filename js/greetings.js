@@ -49,6 +49,7 @@ console.log(savedUsername)
 function paintGreetings(){
     const username = localStorage.getItem(USERNAME_KEY)
     greeting.innerText = `Hello ${username}`
+    greeting.style.color = "white"
     greeting.classList.remove(HIDDEN_CLASSNAME)
 }
 
